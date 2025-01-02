@@ -1,0 +1,113 @@
+[
+    {
+      "event_id": "5",
+      "shopper_id": "1003",
+      "event_type": "cartUpdated",
+      "event_timestamp": "2024-01-03T09:00:00Z",
+      "payload": {
+        "store_id": "15",
+        "transaction_id": "T3",
+        "total_transaction_amount": 300,
+        "products": [
+          {
+            "product_id": "1205",
+            "quantity": 2,
+            "unit_price": 150,
+            "total_price": 300
+          }
+        ],
+        "device": "Web",
+        "payment_method": "PayPal",
+        "transaction_status": "Pending"
+      }
+    },
+    {
+      "event_id": "6",
+      "shopper_id": "1003",
+      "event_type": "cartUpdated",
+      "event_timestamp": "2024-01-03T09:15:00Z",
+      "payload": {
+        "store_id": "15",
+        "transaction_id": "T3",
+        "total_transaction_amount": 550,
+        "products": [
+          {
+            "product_id": "1205",
+            "quantity": 2,
+            "unit_price": 150,
+            "total_price": 300
+          },
+          {
+            "product_id": "2881",
+            "quantity": 1,
+            "unit_price": 250,
+            "total_price": 250
+          }
+        ],
+        "device": "Web",
+        "payment_method": "PayPal",
+        "transaction_status": "Pending"
+      }
+    },
+    {
+      "event_id": "7",
+      "shopper_id": "1003",
+      "event_type": "cartValidated",
+      "event_timestamp": "2024-01-03T09:30:00Z",
+      "payload": {
+        "store_id": "15",
+        "transaction_id": "T3",
+        "total_transaction_amount": 550,
+        "products": [
+          {
+            "product_id": "1205",
+            "quantity": 2,
+            "unit_price": 150,
+            "total_price": 300
+          },
+          {
+            "product_id": "2881",
+            "quantity": 1,
+            "unit_price": 250,
+            "total_price": 250
+          }
+        ],
+        "device": "Web",
+        "payment_method": "PayPal",
+        "transaction_status": "Completed"
+      }
+    },
+    {
+      "event_id": "8",
+      "shopper_id": "1004",
+      "event_type": "cartUpdated",
+      "event_timestamp": "2024-01-04T10:00:00Z",
+      "payload": {
+        "store_id": "10",
+        "transaction_id": "T4",
+        "total_transaction_amount": 200,
+        "products": [
+          {
+            "product_id": "3004",
+            "quantity": 4,
+            "unit_price": 50,
+            "total_price": 200
+          }
+        ],
+        "device": "Mobile",
+        "payment_method": "Credit Card",
+        "transaction_status": "Pending"
+      }
+    },
+    {
+      "event_id": "8",
+      "shopper_id": "1004",
+      "event_type": "cartCanceled",
+      "event_timestamp": "2024-01-04T10:15:00Z",
+      "payload": {
+        "store_id": "10",
+        "transaction_id": "T4",
+        "cancel_reason": "Out of stock"
+      }
+    }
+]

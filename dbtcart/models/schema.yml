@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: src_events
+    columns:
+
+      - name: event_id
+        tests:
+          - unique
+          - not_null

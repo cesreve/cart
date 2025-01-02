@@ -1,0 +1,85 @@
+[
+    {
+      "event_id": "1",
+      "shopper_id": "1001",
+      "event_type": "cartUpdated",
+      "event_timestamp": "2024-01-01T10:00:00Z",
+      "payload": {
+        "store_id": "10",
+        "transaction_id": "T1",
+        "total_transaction_amount": 900,
+        "products": [
+          {
+            "product_id": "2001",
+            "quantity": 3,
+            "unit_price": 300,
+            "total_price": 900
+          },
+          {
+            "product_id": "3004",
+            "quantity": 3,
+            "unit_price": 150,
+            "total_price": 450
+          }
+        ],
+        "device": "Mobile",
+        "payment_method": "Credit Card",
+        "transaction_status": "Pending"
+      }
+    },
+    {
+      "event_id": "2",
+      "shopper_id": "1001",
+      "event_type": "cartUpdated",
+      "event_timestamp": "2024-01-01T10:15:00Z",
+      "payload": {
+        "store_id": "10",
+        "transaction_id": "T1",
+        "total_transaction_amount": 1200,
+        "products": [
+          {
+            "product_id": "2001",
+            "quantity": 4,
+            "unit_price": 300,
+            "total_price": 1200
+          }
+        ],
+        "device": "Mobile",
+        "payment_method": "Credit Card",
+        "transaction_status": "Pending"
+      }
+    },
+    {
+      "event_id": "3",
+      "shopper_id": "1001",
+      "event_type": "cartValidated",
+      "event_timestamp": "2024-01-01T10:30:00Z",
+      "payload": {
+        "store_id": "10",
+        "transaction_id": "T1",
+        "total_transaction_amount": 1200,
+        "products": [
+          {
+            "product_id": "2001",
+            "quantity": 4,
+            "unit_price": 300,
+            "total_price": 1200
+          }
+        ],
+        "device": "Mobile",
+        "payment_method": "Credit Card",
+        "transaction_status": "Completed"
+      }
+    },
+    {
+      "event_id": "4",
+      "shopper_id": "1002",
+      "event_type": "cartCanceled",
+      "event_timestamp": "2024-01-02T11:00:00Z",
+      "payload": {
+        "store_id": "20",
+        "transaction_id": "T2",
+        "cancel_reason": "Changed mind"
+      }
+    }
+]

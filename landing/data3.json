@@ -1,0 +1,94 @@
+[
+    {
+      "event_id": "10",
+      "shopper_id": "1001",
+      "event_type": "cartUpdated",
+      "event_timestamp": "2024-01-01T14:30:00Z",
+      "payload": {
+        "store_id": "20",
+        "transaction_id": "T5",
+        "total_transaction_amount": 300,
+        "products": [
+          {
+            "product_id": "3005",
+            "quantity": 1,
+            "unit_price": 300,
+            "total_price": 300
+          }
+        ],
+        "device": "Mobile",
+        "payment_method": "Credit Card",
+        "transaction_status": "Pending"
+      }
+    },
+    {
+      "event_id": "11",
+      "shopper_id": "1001",
+      "event_type": "cartUpdated",
+      "event_timestamp": "2024-01-01T14:45:00Z",
+      "payload": {
+        "store_id": "20",
+        "transaction_id": "T5",
+        "total_transaction_amount": 750,
+        "products": [
+          {
+            "product_id": "3005",
+            "quantity": 1,
+            "unit_price": 300,
+            "total_price": 300
+          },
+          {
+            "product_id": "2001",
+            "quantity": 3,
+            "unit_price": 150,
+            "total_price": 450
+          }
+        ],
+        "device": "Mobile",
+        "payment_method": "Credit Card",
+        "transaction_status": "Pending"
+      }
+    },
+    {
+      "event_id": "12",
+      "shopper_id": "1001",
+      "event_type": "cartValidated",
+      "event_timestamp": "2024-01-01T15:00:00Z",
+      "payload": {
+        "store_id": "20",
+        "transaction_id": "T5",
+        "total_transaction_amount": 750,
+        "products": [
+          {
+            "product_id": "3005",
+            "quantity": 1,
+            "unit_price": 300,
+            "total_price": 300
+          },
+          {
+            "product_id": "2001",
+            "quantity": 3,
+            "unit_price": 150,
+            "total_price": 450
+          }
+        ],
+        "device": "Mobile",
+        "payment_method": "Credit Card",
+        "transaction_status": "Completed"
+      }
+    },
+    {
+      "event_id": "13",
+      "shopper_id": "1001",
+      "event_type": "cartCanceled",
+      "event_timestamp": "2024-01-01T15:15:00Z",
+      "payload": {
+        "store_id": "12",
+        "transaction_id": "T6",
+        "cancel_reason": "Payment declined", 
+        "device": "Web",
+        "payment_method": "Paypal",
+        "transaction_status": "Canceled" 
+      }
+    }
+  ]

@@ -1,0 +1,67 @@
+[
+    {
+      "event_id": "1",
+      "shopper_id": "1001",
+      "event_type": "productViewed",
+      "event_timestamp": "2024-02-10T15:30:00Z",
+      "payload": {
+        "product_id": "4215",
+        "product_name": "Wireless Headphones",
+        "category": "Electronics",
+        "brand": "Sony"
+      }
+    },
+    {
+      "event_id": "2",
+      "shopper_id": "1001",
+      "event_type": "searchPerformed",
+      "event_timestamp": "2024-02-10T15:35:00Z",
+      "payload": {
+        "search_query": "Laptop",
+        "search_filters": {
+          "brand": "Apple",
+          "price_range": "1000-2000"
+        },
+        "search_results_count": 15
+      }
+    },
+    {
+      "event_id": "3",
+      "shopper_id": "1001",
+      "event_type": "cartValidated",
+      "event_timestamp": "2024-02-10T16:00:00Z",
+      "payload": {
+        "store_id": "12",
+        "transaction_id": "T543",
+        "total_transaction_amount": 1350,
+        "products": [
+          {
+            "product_id": "4215",
+            "quantity": 1,
+            "unit_price": 350,
+            "total_price": 350
+          },
+          {
+            "product_id": "1123",
+            "quantity": 1,
+            "unit_price": 1000,
+            "total_price": 1000
+          }
+        ],
+        "device": "Web",
+        "payment_method": "PayPal",
+        "transaction_status": "Completed"
+      }
+    },
+    {
+      "event_id": "4",
+      "shopper_id": "1002",
+      "event_type": "customerSupportContact",
+      "event_timestamp": "2024-02-11T09:45:00Z",
+      "payload": {
+        "contact_reason": "Order status inquiry",
+        "contact_method": "Email",
+        "order_id": "O65432"
+      }
+    }
+]

@@ -1,0 +1,8 @@
+dbtcart:
+  outputs:
+    dev:
+      type: duckdb
+      path: duck.db
+      threads: 1
+
+  target: dev 
