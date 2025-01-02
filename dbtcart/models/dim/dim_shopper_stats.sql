@@ -27,21 +27,3 @@ select
 from agg_kpis a
 left join cancel_carts c
 	on a.shopper_id = c.shopper_id
-
-
-
-/*
-SELECT 
-    shopper_id,
-    COUNT (*) AS total_transactions,
-    COUNT(CASE WHEN event_type = 'cartValidated' THEN 1 END) AS validated_carts,
-    COUNT(CASE WHEN event_type = 'cartCanceled' THEN 1 END) AS cancelled_carts,
-    CAST(COUNT(CASE WHEN event_type = 'cartValidated' THEN 1 END) AS REAL) * 100 / COUNT(*) AS conversion_rate,
-    SUM(CASE WHEN event_type = 'cartValidated' THEN total_price ELSE 0 END) AS total_spent,
-    AVG(CASE WHEN event_type = 'cartValidated' THEN total_price END) AS average_cart_value,
-    MAX(event_timestamp) AS last_cart_date,
-    (SELECT device FROM fct_events WHERE shopper_id = e.shopper_id GROUP BY device ORDER BY COUNT(*) DESC LIMIT 1) AS preferred_device,
-    (SELECT payment_method FROM fct_events WHERE shopper_id = e.shopper_id GROUP BY payment_method ORDER BY COUNT(*) DESC LIMIT 1) AS preferred_payment_method
-FROM fct_events e
-GROUP BY shopper_id
-*/
